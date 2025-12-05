@@ -1,0 +1,333 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    position: relative;
+    background: url('asset/pexels-harun-tan-3980364.jpg') no-repeat center center/cover;
+    height: 100vh;
+    color: white;
+    margin-bottom: 120px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3% 14% ;
+    color: #ccc;
+    color: rgb(255, 255, 255, 0.7);
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: -15%;
+    padding-right: 5% 7%;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 5% 1%;
+    padding: 5%;
+}
+
+.nav-links a {
+    
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+
+.nav-links a.active,
+.nav-links:hover {
+   color: red;
+}
+
+.hero {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;   
+}
+
+.welcome-message {
+    margin-bottom: 25%;
+}
+
+#welcome-text {
+    padding: 10px 20px;
+    background-color: rgb(20, 20, 20);
+    border-radius: 15px;
+    animation: fade-in-out 10s infinite;
+    -webkit-animation: fade-in-out 10s infinite;
+}
+
+@keyframes fade-in-out {
+    0%, 100% { opacity: 0; }
+    50% { opacity: 1; }
+}
+
+.welcome-sedang {
+    margin-bottom: 20%;
+}
+
+#welcome-development {
+    background-color: rgb(20, 20, 20);
+    border-radius: 30px;
+    animation: fade-in-out 3s infinite;
+    -webkit-animation: fade-in-out 3s infinite;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    color: #e91e63;
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin-bottom: 20%;
+}
+
+.hero a {
+    padding: 10% 20%;
+    font-size: 1rem;
+    color: white;
+    background-color: #e91e63;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.about {
+    padding: 80px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.about-wrapper {
+    width: 80%;
+    max-width: 1100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.about-img img {
+    width: 330px;
+    border-radius: 12px;
+    object-fit: cover;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+
+.about-text {
+    max-width: 450px;
+}
+
+.about-text h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.about-text p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .about-wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-img img {
+        width: 260px;
+    }
+}
+
+.service {
+    padding-top: 80%;
+    margin-top: 50px;
+    padding: 80px 0 60px;
+    text-align: center;
+}
+
+.service-title {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.service-subtitle {
+    width: 80%;
+    max-width: 900px;
+    margin: auto;
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 45px;
+}
+
+.service-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* CARD */
+.service-box {
+    width: 300px;
+    background: #fff;
+    padding: 30px 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: 0.35s ease;
+    text-align: center;
+}
+
+.service-box:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 20px 35px rgba(0,0,0,0.15);
+}
+
+/* ICON */
+.service-icon {
+    width: 70px;
+    margin-bottom: 15px;
+}
+
+/* TEXT */
+.service-box h3 {
+    margin-bottom: 10px;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.service-box p {
+    font-size: 15px;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .service-box {
+        width: 90%;
+    }
+}
+
+/* ============================
+   MOBILE RESPONSIVE
+============================ */
+
+@media (max-width: 768px) {
+
+    .service {
+        padding: 50px 0 40px;
+    }
+
+    .service-title {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+
+    .service-subtitle {
+        width: 90%;
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+
+    .service-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .service-box {
+        width: 90%;
+        padding: 20px;
+        border-radius: 12px;
+    }
+
+    .service-icon {
+        width: 55px;
+        margin-bottom: 12px;
+    }
+
+    .service-box h3 {
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+
+    .service-box p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+}
+
+/* Untuk HP ukuran kecil (≤450px) */
+@media (max-width: 450px) {
+
+    .service-title {
+        font-size: 24px;
+    }
+
+    .service-subtitle {
+        font-size: 13px;
+    }
+
+    .service-box {
+        width: 92%;
+        padding: 18px;
+    }
+
+    .service-icon {
+        width: 48px;
+    }
+
+    .service-box h3 {
+        font-size: 17px;
+    }
+
+    .service-box p {
+        font-size: 13px;
+    }
+}
+
+
+.footer {
+    background-color: rgba(255, 255, 255, 0.548);
+    color: black;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer p {
+    margin-bottom: 10px;
+}
